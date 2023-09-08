@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"> 
+    <title>Test page</title>
+  </head>
+
+  <body aria-haspopup="dialog">
+
+    <div 
+      class="overlay" role="dialog" aria-modal="true" 
+      aria-live="assertive" aria-labelledby="modal-title"
+    >
+      <div class="modal">
+        <h1 id="modal-title">Accessible Modal Dialog</h1>
+          <p>
+            To close click a button, Escape, or outside this dialog.
+          </p>
+          <button class="close-modal" aria-label="Close">
+            X
+          </button>
+          <button class="close-modal" >
+            Close
+          </button>
+      </div>
+    </div>
+
+    <main>
+      <h1>Main Title</h1>
+      <section>
+        <button class="open-modal">
+          Open Modal 1
+        </button>
+        <button class="open-modal">
+          Open Modal 2
+        </button>
+      </section>
+
+    </main>
+
+    <script type="module" src="./modules/modal.js"></script>
+    <script type="module" src="./modules/inert.min.js"></script
+  </body>
+
+</html>
